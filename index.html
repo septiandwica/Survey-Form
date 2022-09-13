@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+      <h1 id="title" class="text-center">Who Are You?</h1>
+      <p id="description" class="description text-center">Thank you for taking the time to fill this form
+      </p>
+      </header>
+
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input 
+            id="name" 
+            type="text" 
+            name="name"
+            placeholder="Enter your name" 
+            class="form-control" required>
+        </div>
+
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input 
+            id="email" 
+            type="email" 
+            name="email"
+            placeholder="Enter your Email" 
+            class="form-control" required>
+        </div>
+
+        <div class="form-group">
+          <label id="number-label" for="number">Age</label>
+          <input 
+            id="number" 
+            type="number" 
+            name="age"
+            min="8" 
+            max="99" 
+            placeholder="Age" 
+            class="form-control" required>
+        </div>
+
+        <div class="form-group">
+          <p>Gender</p>
+          <label>
+          <input 
+            type="radio" 
+            value="definitely" 
+            name="recommended" 
+            class="input-radion">Male
+          </label>
+
+          <label>
+          <input 
+            type="radio" 
+            value="maybe" 
+            name="recommended" 
+            class="input-radion">Female
+          </label>
+
+          <label>
+          <input 
+            type="radio" 
+            value="not-sure" 
+            name="recommended" 
+            class="input-radion">Other
+          </label>
+        </div>
+
+        <div class="form-group">
+          <p>Programing Approach</p>
+            <select id="dropdown" class="form-control">
+              <option disabled>Select an option</option>
+              <option>Front-End</option>
+              <option>Back-End</option>
+              <option>Fullstack</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+          <p>Your Favorite Programing Language</p>
+          <label>
+          <input 
+            type="checkbox" 
+            value="front-end-projects" 
+            class="input-checkbox">C/C++</label>
+          <label>
+          <input 
+            type="checkbox" 
+            value="back-end-projects" 
+            class="input-checkbox">Pascal/Delphi</label>
+          <label>
+          <input 
+            type="checkbox" 
+            value="data-visualization" 
+            class="input-checkbox">Java</label>
+          <label>
+          <input
+            type="checkbox" 
+            value="challanges" 
+            class="input-checkbox">JavaScript</label>
+          <label>
+          <input 
+            type="checkbox" 
+            value="open-source-community" 
+            class="input-checkbox">Python</label>
+          <label>
+        </div>
+
+        <div class="form-group">
+          <p>Summary?</p>
+          <textarea 
+            id="comments" 
+            class="input-textarea" 
+            name="comment" 
+            placeholder="Enter your summary here..."></textarea>
+        </div>
+
+        <div class="form-group">
+          <button 
+            id="submit" 
+            type="submit" 
+            class="submit-button">Submit
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
